@@ -245,10 +245,22 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
-}
+function listOfNames(array) {
+  let newArray = [...array]
+  for (let i = 0; i < newArray.length; i++){
+    newArray[i] = newArray[i].name
 
+    
+  } return newArray
+  /* 
+  map method
+  let newArray = array.map((artist)=>{
+    return artist.name
+  })
+  */ 
+
+}
+console.log('task4', listOfNames(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -260,10 +272,13 @@ Use removeArtist to do the following:
 5. Return the resulting copied array
 🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(array, number) {
+  let newArray = [...array]
+    newArray.splice(number, 1)
+  return newArray
 }
 
+console.log('task5', removeArtist(artists, 3))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -282,11 +297,19 @@ Use addArtist to do the following:
 5. Add the newly created object to the copied array, then return the copied array
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(array, name, years, genre, nationality, bio) {
+  let newArray = [...array]
+  obj = {name: 'Your name here',
+  years: 'Your Birth Year - current day',
+genre: 'Your genre here',
+nationality: 'Your Nationality Here',
+bio: 'Add 1-2 sentences (or use lorem ipsum',}
+
+newArray.push(obj)
+return newArray
 }
 
-
+console.log('task6', addArtist(artists, 'Harry Styles', '1994-2022', 'pop', 'English', 'My name is Harry Styles and I am English singer-songwriter.'))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
