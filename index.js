@@ -299,17 +299,17 @@ Use addArtist to do the following:
 
 function addArtist(array, name, years, genre, nationality, bio) {
   let newArray = [...array]
-  const obj = {name: 'Your name here',
-  years: 'Your Birth Year - current day',
-genre: 'Your genre here',
-nationality: 'Your Nationality Here',
-bio: 'Add 1-2 sentences (or use lorem ipsum',}
+  const obj = {'name': name,
+  'years': years,
+'genre': genre,
+'nationality': nationality,
+'bio': bio,}
 
 newArray.push(obj)
 return newArray
 }
 
-console.log('task6', addArtist(artists, 'Harry Styles', '1994-2022', 'pop', 'English', 'My name is Harry Styles and I am English singer-songwriter.'))
+console.log('task6', addArtist(artists, 'Harry Styles', '1994-2022', 'pop', 'English', 'My name is Harry Styles and I am an English singer-songwriter.'))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
