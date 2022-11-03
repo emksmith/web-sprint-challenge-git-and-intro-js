@@ -299,7 +299,7 @@ Use addArtist to do the following:
 
 function addArtist(array, name, years, genre, nationality, bio) {
   let newArray = [...array]
-  obj = {name: 'Your name here',
+  const obj = {name: 'Your name here',
   years: 'Your Birth Year - current day',
 genre: 'Your genre here',
 nationality: 'Your Nationality Here',
