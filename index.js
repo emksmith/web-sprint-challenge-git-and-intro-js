@@ -345,16 +345,18 @@ Use artistInfo to do the following:
 */
 
 function artistInfo(array, string){
- let newArray = [];
+ let artistBio = "";
  for (let i = 0; i < array.length; i++) {
  if (array[i].name === string)
- newArray.push(array[i].bio)
+ artistBio = array[i].bio
   }
-  return newArray
+return artistBio
  } 
 
 
-console.log('task8', artistInfo(artists, 'Frida Kahlo'))
+
+
+console.log('task8', artistInfo(artists, 'Kazmir Malevich'))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 9: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
